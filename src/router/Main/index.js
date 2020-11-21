@@ -1,10 +1,9 @@
 import React from 'react';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-import FeatherIcon from 'react-native-vector-icons/Feather';
 
-import home from '../main/home';
-import profile from '../main/profile';
-import transaction from '../main/transaction';
+import Home from '../main/home';
+import Transaction from '../main/profile';
+import Profile from '../main/transaction';
 
 const Tab = createBottomTabNavigator();
 const Stack = createStackNavigator();
@@ -13,7 +12,7 @@ const MainApp = () => (
   return (
     <Tab.Navigator>
         <Tab.Screen name="Home" component={HomeScreen} />
-        <Tab.Screen name="Transaction" component={SettingsScreen} />
+        <Tab.Screen name="Transaction" component={Transaction} />
         <Tab.Screen name="Profile" component={Profile} />
       </Tab.Navigator>
   );

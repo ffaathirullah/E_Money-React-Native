@@ -25,11 +25,11 @@ const Router = () => (
   return (
     <NavigationContainer>
       <Stack.Navigator headerModeconst Auth = () => (="none">
-        <Stack.Screen name="auth" component={Auth} />
-        <Stack.Screen name="home" component={Home} />
-        <Stack.Screen name="topup" component={TopUp} />
-        <Stack.Screen name="qrpay" component={QrPay} />
-        <Stack.Screen name="transfer" component={Transfer} />
+        <Stack.Screen name="Auth" component={Auth} />
+        <Stack.Screen name="Main" component={Main} />
+        <Stack.Screen name="Topup" component={TopUp} />
+        <Stack.Screen name="Qrpay" component={QrPay} />
+        <Stack.Screen name="Transfer" component={Transfer} />
       </Stack.Navigator>
     </NavigationContainer>
   );
