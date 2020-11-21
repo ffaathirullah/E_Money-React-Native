@@ -1,21 +1,32 @@
 import React from 'react';
 import {createStackNavigator} from '@react-navigation/stack';
 import {NavigationContainer} from '@react-navigation/native';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
-import Auth from './auth';
-import Main from './main';
-import TopUp from './topUpFlow';
-import QrPay from './paymentFlow';
-import Transfer from './transferFlow';
+import Auth from './Auth';
+import TopUp from './TopUpFlow';
+import QrPay from './PaymentFlow';
+import Transfer from './TransferFlow';
 
 const Stack = createStackNavigator();
+const Tab = createBottomTabNavigator();
 
-export default function index() {
+
+const MainApp = () => (
+  return (
+    <Tab.Navigator>
+        <Tab.Screen name="Home" component={HomeScreen} />
+        <Tab.Screen name="Settings" component={SettingsScreen} />
+      </Tab.Navigator>
+  );
+}
+
+const Router = () => (
   return (
     <NavigationContainer>
-      <Stack.Navigator headerMode="none">
+      <Stack.Navigator headerModeconst Auth = () => (="none">
         <Stack.Screen name="auth" component={Auth} />
-        <Stack.Screen name="main" component={Main} />
+        <Stack.Screen name="home" component={Home} />
         <Stack.Screen name="topup" component={TopUp} />
         <Stack.Screen name="qrpay" component={QrPay} />
         <Stack.Screen name="transfer" component={Transfer} />
@@ -23,3 +34,5 @@ export default function index() {
     </NavigationContainer>
   );
 }
+
+export default Router;
