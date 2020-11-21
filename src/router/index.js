@@ -9,17 +9,6 @@ import QrPay from './PaymentFlow';
 import Transfer from './TransferFlow';
 
 const Stack = createStackNavigator();
-const Tab = createBottomTabNavigator();
-
-
-const MainApp = () => (
-  return (
-    <Tab.Navigator>
-        <Tab.Screen name="Home" component={HomeScreen} />
-        <Tab.Screen name="Settings" component={SettingsScreen} />
-      </Tab.Navigator>
-  );
-}
 
 const Router = () => (
   return (
