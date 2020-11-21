@@ -1,13 +1,10 @@
+import {View, StyleSheet} from 'react-native';
 import React from 'react';
-import {
-  View,
-  Text,
-  StyleSheet,
-  TouchableOpacity,
-} from 'react-native';
+import TabsItems from '../TabsItems';
 
-const BottomNavigation = ({ state, descriptors, navigation }) => (
-const focusedOptions = descriptors[state.routes[state.index].key].options;
+
+const BottomNavigaton = ({state, descriptors, navigation}) => {
+  const focusedOptions = descriptors[state.routes[state.index].key].options;
 
   if (focusedOptions.tabBarVisible === false) {
     return null;
@@ -16,7 +13,7 @@ const focusedOptions = descriptors[state.routes[state.index].key].options;
   return (
     <View style={styles.container}>
       {state.routes.map((route, index) => {
-        const { options } = descriptors[route.key];
+        const {options} = descriptors[route.key];
         const label =
           options.tabBarLabel !== undefined
             ? options.tabBarLabel
@@ -47,30 +44,26 @@ const focusedOptions = descriptors[state.routes[state.index].key].options;
 
         return (
           <TabsItems
-               key={index}
-               label={label}
-               isFocused={isFocused}
-               onPress={onPress}
-               onLongPress={onLongPress}
-             />
-            <Text style={{ color: isFocused ? '#673ab7' : '#222' }}>
-              {label}
-            </Text>
-          </TouchableOpacity>
+            key={index}
+            label={label}
+            isFocused={isFocused}
+            onPress={onPress}
+            onLongPress={onLongPress}
+          />
         );
       })}
     </View>
   );
-);
+};
 
-export default BottomNavigation;
+export default BottomNavigaton;
 
 const styles = StyleSheet.create({
   container: {
     flexDirection: 'row',
     backgroundColor: '#ffffff',
     justifyContent: 'space-between',
-    paddingHorizontal: 57,
+    paddingHorizontal: 59,
     paddingVertical: 14,
   },
 });

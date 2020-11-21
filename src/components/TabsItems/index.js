@@ -8,7 +8,8 @@ import {
   Icon_transaction_active,
   Icon_profile,
   Icon_profile_active
-} from '../../assets';
+} from '../../assests';
+
 import {WarnaDisable, WarnaUtama} from '../../utils';
 
 const TabsItems = ({label, isFocused, onPress, onLongPress}) => {
@@ -22,7 +23,7 @@ const TabsItems = ({label, isFocused, onPress, onLongPress}) => {
     if (label === 'Profile') {
       return isFocused ? <Icon_profile_active /> : <Icon_profile />;
     }
-    return <icon_home />;
+    return <Icon_home />;
   };
   return (
     <TouchableOpacity
