@@ -7,15 +7,19 @@ import {
   TouchableOpacity,
 } from 'react-native';
 
+import {Icon_topup, Icon_qrpay, Icon_transfer} from '../../assests'
 
 const {width, height} = Dimensions.get('window');
 
-export default function homeComp1({navigation}) {
+const HomeComponents = ({navigation}) => {
   return (
     <View style={styles.ContainerNavigasi}>
       <TouchableOpacity
         style={{alignItems: 'center'}}
         onPress={() => navigation.push('topup')}>
+        <View style={styles.Rectangle}>
+        <Icon_topup />
+        </View>
         <Text style={{fontSize: 15, color: '#fff', fontWeight: 'bold'}}>
           Top Up
         </Text>
@@ -23,6 +27,9 @@ export default function homeComp1({navigation}) {
       <TouchableOpacity
         style={{alignItems: 'center'}}
         onPress={() => navigation.push('qrpay')}>
+        <View style={styles.Rectangle}>
+        <Icon_qrpay />
+        </View>
         <Text style={{fontSize: 15, color: '#fff', fontWeight: 'bold'}}>
           QR Pay
         </Text>
@@ -30,6 +37,9 @@ export default function homeComp1({navigation}) {
       <TouchableOpacity
         style={{alignItems: 'center'}}
         onPress={() => navigation.push('transfer')}>
+        <View style={styles.Rectangle}>
+        <Icon_transfer />
+        </View>
         <Text style={{fontSize: 15, color: '#fff', fontWeight: 'bold'}}>
           Transfer
         </Text>
@@ -37,6 +47,8 @@ export default function homeComp1({navigation}) {
     </View>
   );
 }
+
+export default HomeComponents;
 
 const styles = StyleSheet.create({
   ContainerNavigasi: {

@@ -5,6 +5,9 @@ import Icon_transaction_active from './transaction_active.svg';
 import Icon_profile from './profile.svg';
 import Icon_profile_active from './profile_active.svg';
 import Icon_avatar from './ava1.jpg';
+import Icon_topup from './topup.svg';
+import Icon_qrpay from './qrpay.svg';
+import Icon_transfer from './transfer.svg';
 
 export {
   Icon_home,
@@ -13,5 +16,8 @@ export {
   Icon_transaction_active,
   Icon_profile,
   Icon_profile_active,
-  Icon_avatar
+  Icon_avatar,
+  Icon_topup,
+  Icon_qrpay,
+  Icon_transfer
 };
