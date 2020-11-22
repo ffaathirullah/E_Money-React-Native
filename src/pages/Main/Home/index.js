@@ -1,11 +1,11 @@
 import React from 'react';
 import {StyleSheet, Text, View, Dimensions, FlatList} from 'react-native';
 
-import {HomeComponents} from '../components';
+import {HomeComponents} from '../../../components';
 
 const {width, height} = Dimensions.get('window');
 
-export default function home({navigation}) {
+const Home = ({navigation}) => {
   return (
     <View style={styles.Container}>
       <View style={styles.ContainerSaldo}>
@@ -57,6 +57,8 @@ export default function home({navigation}) {
     </View>
   );
 }
+
+export default Home;
 
 const styles = StyleSheet.create({
   Container: {},

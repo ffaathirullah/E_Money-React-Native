@@ -3,11 +3,11 @@ import {Image, TouchableOpacity, StyleSheet, Text, View} from 'react-native';
 
 import {
   Icon_avatar
-} from '../assests';
+} from '../../../assests';
 
 const circleRadius = 140;
 
-export default function profile() {
+const Profile = () => {
   return (
     <View>
       <View
@@ -53,6 +53,8 @@ export default function profile() {
     </View>
   );
 }
+
+export default Profile;
 
 const styles = StyleSheet.create({
   buttonSetting: {

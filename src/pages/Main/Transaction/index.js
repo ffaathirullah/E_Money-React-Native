@@ -1,7 +1,8 @@
 import React from 'react';
 import {StyleSheet, Text, View, Dimensions, FlatList} from 'react-native';
 
-export default function transaction() {
+
+const Transaction = () => {
   return (
     <View style={{marginHorizontal: 21, marginTop: 18, marginBottom: 30}}>
       <Text style={{fontSize: 24, fontWeight: 'bold', marginBottom: 10}}>
@@ -42,5 +43,7 @@ export default function transaction() {
     </View>
   );
 }
+
+export default Transaction;
 
 const styles = StyleSheet.create({});
