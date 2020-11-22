@@ -1,4 +1,5 @@
 import BottomNavigation from './BottomNavigation';
 import HomeComponents from './HomeComponents';
+import Header from './Header';
 
-export {BottomNavigation, HomeComponents};
+export {Header, BottomNavigation, HomeComponents};

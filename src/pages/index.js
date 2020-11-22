@@ -1,1 +1,2 @@
-export {Home, Profile, Transaction} from './Main';
+export * from './Main';
+export * from './Auth';

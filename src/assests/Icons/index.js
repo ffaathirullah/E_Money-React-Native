@@ -8,6 +8,7 @@ import Icon_avatar from './ava1.jpg';
 import Icon_topup from './topup.svg';
 import Icon_qrpay from './qrpay.svg';
 import Icon_transfer from './transfer.svg';
+import Icon_backstackManipulation from './backstackManipulation.svg';
 
 export {
   Icon_home,
@@ -19,5 +20,6 @@ export {
   Icon_avatar,
   Icon_topup,
   Icon_qrpay,
-  Icon_transfer
+  Icon_transfer,
+  Icon_backstackManipulation
 };
